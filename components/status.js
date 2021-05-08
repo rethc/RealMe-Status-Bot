@@ -13,7 +13,7 @@ export default function Status({ name, code, uptime, responseTime }) {
         style={{
           background:
             code === 2
-              ? "#4caf50"
+              ? "#47cbac"
               : code === 1
               ? "#1a202c"
               : code === 8
