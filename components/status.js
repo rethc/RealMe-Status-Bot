@@ -65,13 +65,15 @@ export default function Status({ name, code, uptime, responseTime }) {
           smooth
           autoDraw
           autoDrawDuration={3000}
+          autoDrawEasing="ease-out"
           data={
             responseTime.length > 1 ? responseTime.map((a) => a.value) : [0, 0]
           }
           gradient={["#529eed"]}
           strokeWidth={2}
+          radius={0}
           strokeLinecap={"round"}
-          padding={0}
+          padding={1}
         />
       </div>
     </div>
