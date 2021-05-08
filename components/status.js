@@ -13,12 +13,12 @@ export default function Status({ name, code, uptime, responseTime }) {
         style={{
           background:
             code === 2
-              ? "#47cbac"
+              ? "#4caf50"
               : code === 1
               ? "#1a202c"
               : code === 8
-              ? "#f5d5be"
-              : "#cd43b3",
+              ? "#ff9800"
+                  : "#f44336",
         }}
       />
       <div className="text-lg mb-2">
@@ -69,7 +69,7 @@ export default function Status({ name, code, uptime, responseTime }) {
           data={
             responseTime.length > 1 ? responseTime.map((a) => a.value) : [0, 0]
           }
-          gradient={["#529eed"]}
+          gradient={["#f48fb1"]}
           strokeWidth={2}
           radius={0}
           strokeLinecap={"round"}

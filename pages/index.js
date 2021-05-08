@@ -32,10 +32,10 @@ function Home({ title, monitorsSSR }) {
   const m = !error ? monitors : [];
   const status =
     m.filter((a) => a.status !== 2).length > 0
-      ? { m: "Some services are not running...", c: "#f09622" }
+      ? { m: "Some services are not running...", c: "#f57c00" }
       : {
         m: `All RealMe Login Services are running (${m.length}/${m.length})`,
-        c: "#065f46",
+        c: "#388e3c",
       };
   return (
     <div>
