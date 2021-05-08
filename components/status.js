@@ -35,7 +35,7 @@ export default function Status({ name, code, uptime, responseTime, datetime }) {
         </span>
       </div>
       <div>
-        Last Updated:{" "} 
+        Running since:{" "} 
         <span className="text-blue-400">{fromUnixTime(datetime).toString()}</span>
       </div>
       <div>
