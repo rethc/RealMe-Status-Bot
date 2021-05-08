@@ -32,7 +32,7 @@ function Home({ title, monitorsSSR }) {
   const m = !error ? monitors : [];
   const status =
     m.filter((a) => a.status !== 2).length > 0
-      ? { m: "Minor Outage", c: "#f5d5be" }
+      ? { m: "Minor Outage", c: "#f09622" }
       : {
         m: `All Login Services Fully Operational (${m.length}/${m.length})`,
         c: "#065f46",
