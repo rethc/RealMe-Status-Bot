@@ -1,9 +1,13 @@
-# Realme-status-bot v1.0.0
+# Realme-status-bot v1.0.1
 Unofficial web app for checking the status of RealMe login services, uses [UptimeRobot](https://uptimerobot.com/) as the status checker.
+
+## Features added: 
+- Last updated time - finally working!! 
+
 
 ## To do:
  
-- Auto refresh (bot checks every 5mins)
+- Auto refresh (bot checks every 1 hour)
 
 - Create a view to see individual services in more details
 
