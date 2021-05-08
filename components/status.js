@@ -69,7 +69,7 @@ export default function Status({ name, code, uptime, responseTime }) {
           data={
             responseTime.length > 1 ? responseTime.map((a) => a.value) : [0, 0]
           }
-          gradient={["#f48fb1"]}
+          gradient={["#aa647b"]}
           strokeWidth={2}
           radius={0}
           strokeLinecap={"round"}
