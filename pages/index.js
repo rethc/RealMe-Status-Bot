@@ -41,7 +41,7 @@ function Home({ title, monitorsSSR }) {
     <div>
       <Head>
         <title>RealMe Service Status</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <meta property="og:title" content={"RealMe Service Status"} />
         <meta
           property="og:description"
