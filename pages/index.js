@@ -32,9 +32,9 @@ function Home({ title, monitorsSSR }) {
   const m = !error ? monitors : [];
   const status =
     m.filter((a) => a.status !== 2).length > 0
-      ? { m: "Minor Outage", c: "#f09622" }
+      ? { m: "Some services are not running...", c: "#f09622" }
       : {
-        m: `All Login Services Fully Operational (${m.length}/${m.length})`,
+        m: `All RealMe Login Services are running (${m.length}/${m.length})`,
         c: "#065f46",
       };
   return (
@@ -72,7 +72,7 @@ function Home({ title, monitorsSSR }) {
             ))}
           </div>
           <footer class="p-4 text-center">
-            Unofficial web app for checking the status of RealMe© login services, uses <a
+            Unofficial web app for checking the status of RealMe® login services, uses <a
               href="https://uptimerobot.com/"
               target="_blank"
               className="text-blue-300"
@@ -99,8 +99,8 @@ Home.getInitialProps = async ({ req }) => {
       let m = data.data;
       let title =
         m.filter((a) => a.status !== 2).length > 0
-          ? "Minor Outage"
-          : `All Login Services Fully Operational (${m.length}/${m.length})`;
+          ? "Some services are not running..."
+          : `All RealMe Login Services are running (${m.length}/${m.length})`;
       return { title, monitorsSSR: m };
     } catch {
       return;

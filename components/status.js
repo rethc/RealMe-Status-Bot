@@ -5,7 +5,7 @@ export default function Status({ name, code, uptime, responseTime }) {
   return (
     <div
       className="rounded-sm bg-gray-800 m-4 p-4 relative"
-      style={{ width: "24rem", height: "16rem" }}
+      style={{ width: "24rem", height: "17rem" }}
     >
       <h1 className="text-2xl font-bold text-blue-200">{name}</h1>
       <div
@@ -73,7 +73,7 @@ export default function Status({ name, code, uptime, responseTime }) {
           strokeWidth={2}
           radius={0}
           strokeLinecap={"round"}
-          padding={1}
+          padding={0}
         />
       </div>
     </div>
