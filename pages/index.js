@@ -71,7 +71,7 @@ function Home({ title, monitorsSSR }) {
               />
             ))}
           </div>
-          <footer class="p-4 text-center">
+          <footer className="p-4 text-center">
             Unofficial web app for checking the status of RealMe® login services, uses <a
               href="https://uptimerobot.com/"
               target="_blank"
