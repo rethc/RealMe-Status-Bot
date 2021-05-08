@@ -2,7 +2,7 @@
 Unofficial web app for checking the status of RealMe login services, uses [UptimeRobot](https://uptimerobot.com/) as the status checker.
 
 ## New Features: 
-- Last updated time - finally working!! (v1.0.1)
+- Timestamps finally working! (v1.0.1)
 
 
 ## To do:
