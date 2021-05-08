@@ -80,7 +80,7 @@ function Home({ title, monitorsSSR }) {
               UptimeRobot
             </a>{" "} <br />
 
-            The bot monitors the login services every 5 minutes. Created by Ches.
+            The bot monitors the login services every one hour. Created by Ches.
           </footer>
         </div>
       ) : (
