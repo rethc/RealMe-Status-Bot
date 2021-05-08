@@ -1,11 +1,12 @@
 import React from "react";
 import Trend from "react-trend";
+import fromUnixTime from 'date-fns/fromUnixTime';
 
-export default function Status({ name, code, uptime, responseTime, logs }) {
+export default function Status({ name, code, uptime, responseTime, datetime }) {
   return (
     <div
       className="rounded-sm bg-gray-800 m-4 p-4 relative"
-      style={{ width: "24rem", height: "18.2rem" }}
+      style={{ width: "24rem", height: "19.8rem" }}
     >
       <h1 className="text-2xl font-bold text-blue-200">{name}</h1>
       <div
@@ -34,9 +35,8 @@ export default function Status({ name, code, uptime, responseTime, logs }) {
         </span>
       </div>
       <div>
-        Last Updated:{" "}
-        <span className="text-blue-400">{logs}</span>       
-       
+        Last Updated:{" "} 
+        <span className="text-blue-400">{fromUnixTime(datetime).toString()}</span>
       </div>
       <div>
         Up{" "}
