@@ -71,22 +71,17 @@ function Home({ title, monitorsSSR }) {
               />
             ))}
           </div>
-          <div className="text-center w-full">
+          <footer class="p-4 text-center">
             Unofficial web app for checking the status of RealMe© login services, uses <a
               href="https://uptimerobot.com/"
               target="_blank"
               className="text-blue-300"
             >
               UptimeRobot
-            </a>{" "}
+            </a>{" "} <br />
 
-        as the status checker.
-          </div>
-          <div className="text-center w-full">
-            The bot monitors the login services every 5 minutes. This is built using NextJS. Created by Ches.
-          </div>
-
-
+            The bot monitors the login services every 5 minutes. Created by Ches.
+          </footer>
         </div>
       ) : (
         <Error statusCode={500} title={error} />
