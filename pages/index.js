@@ -63,11 +63,12 @@ function Home({ title, monitorsSSR }) {
           <div className="w-full flex flex-wrap justify-center">
             {m.map((v, k) => (
               <Status
+                key={k}
                 name={v.friendly_name}
                 code={v.status}
                 uptime={v.custom_uptime_ratio}
-                responseTime={v.response_times}
-                key={k}
+                responseTime={v.response_times}                               
+                logs={v.logs.map((date) => date.datetime)}
               />
             ))}
           </div>

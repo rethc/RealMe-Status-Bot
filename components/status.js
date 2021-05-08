@@ -1,11 +1,11 @@
 import React from "react";
 import Trend from "react-trend";
 
-export default function Status({ name, code, uptime, responseTime }) {
+export default function Status({ name, code, uptime, responseTime, logs }) {
   return (
     <div
       className="rounded-sm bg-gray-800 m-4 p-4 relative"
-      style={{ width: "24rem", height: "17rem" }}
+      style={{ width: "24rem", height: "18.2rem" }}
     >
       <h1 className="text-2xl font-bold text-blue-200">{name}</h1>
       <div
@@ -32,6 +32,11 @@ export default function Status({ name, code, uptime, responseTime }) {
             ? "Minor Outage"
             : "Down"}
         </span>
+      </div>
+      <div>
+        Last Updated:{" "}
+        <span className="text-blue-400">{logs}</span>       
+       
       </div>
       <div>
         Up{" "}
@@ -69,7 +74,7 @@ export default function Status({ name, code, uptime, responseTime }) {
           data={
             responseTime.length > 1 ? responseTime.map((a) => a.value) : [0, 0]
           }
-          gradient={["#aa647b"]}
+          gradient={['#42b3f4']}
           strokeWidth={2}
           radius={0}
           strokeLinecap={"round"}
